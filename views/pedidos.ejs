@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Meus pedidos</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>Meus pedidos</h1>
+    <!-- <%=pedido %> -->
+     
+    <!-- Foreach o array de objetos -->
+
+    <!-- <% pedido.forEach(pedido => {%>
+        Produto : <%=pedido.produto %> <br>
+        Preço : <%=pedido.preco %> <br><br>
+    <% }) %> -->
+
+    <h4>foreach dentro de tabela</h4>
+
+
+    <table border="1">
+        <tr>
+            <th>Produto</th>
+            <th>Preço</th>
+        </tr>
+        <% pedido.forEach(pedido => {%>
+        <tr>
+            <td><%=pedido.produto %></td>
+            <td><%=pedido.preco %></td>
+        </tr>
+        <% }) %>
+    </table>
+    
+</body>
+</html>

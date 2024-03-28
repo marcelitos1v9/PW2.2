@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>Clientes </h1>
+    <table border="1">
+        <tr>
+            <th>Nome</th>
+            <th>CPF</th>
+            <th>Cidade</th>
+        </tr>
+        <% cliente.forEach(cliente => {%>
+        <tr>
+            <td><%=cliente.nome %></td>
+            <td><%=cliente.cpf %></td>
+            <td><%=cliente.cidade %></td>
+        </tr>
+        <% }) %>
+    </table>
+</body>
+</html>
