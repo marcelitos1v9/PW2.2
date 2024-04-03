@@ -7,6 +7,8 @@ const app = express();
 
 app.set('view engine', 'ejs');
 
+//definindo a pasta public para arquivos estaticos
+app.use(express.static('public'))
 
 
 //criando a primeira rota(rota principal)
